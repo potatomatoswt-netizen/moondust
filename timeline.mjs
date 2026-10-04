@@ -1,0 +1,3 @@
+export function formatTime(value){const t=Math.max(0,Math.floor(value)),h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=t%60;return h?`${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`:`${m}:${String(s).padStart(2,'0')}`;}
+export function parseTime(value){const p=String(value).trim().split(':');if(p.length<2||p.length>3||p.some(x=>!/^\d+$/.test(x))||p.slice(1).some(x=>Number(x)>59))throw Error('시간은 분:초 또는 시:분:초로 입력해 주세요.');return p.reduce((n,x)=>n*60+Number(x),0);}
+export function moveRange(start,end,duration,which,value){value=Math.round(value);if(which==='start')start=Math.max(0,Math.min(value,end-1));else end=Math.max(start+1,Math.min(value,duration));if(end-start>180){if(which==='start')end=start+180;else start=end-180;}return {start,end};}
