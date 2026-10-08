@@ -38,3 +38,5 @@ $('connect-account').addEventListener('click',()=>{status('기존 치지직 계�
 $('disconnect-account').addEventListener('click',async()=>{if(busy)return;busy=true;render();try{await rpc('logout');account=null;sessionStorage.removeItem(key);status('이 브라우저의 계정 연결을 해제했습니다.');}catch(e){status(e.message);}finally{busy=false;render();}});
 for(const event of ['input','modechange','rangechange','videoready'])document.addEventListener(event,render);
 render();void initial.then(()=>{const p=pending();if(p&&account&&!busy)void submit(p);});
+
+document.addEventListener('emote-account',e=>{account=e.detail;render();});
