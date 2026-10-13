@@ -3,7 +3,7 @@ const $=id=>document.getElementById(id),key='md-submit-intent';let account=null,
 const lb=v=>(v/1000).toFixed(2)+'lb';
 function status(text){$('account-status').hidden=false;$('account-status').textContent=text;}
 function render(){
- $('account-summary').textContent=account?account.nickname+' · 보유 '+lb(account.balanceMilliLb)+' · 누적 '+lb(account.lifetimeMilliLb):connecting?'기존 달가루 계정 확인 중…':'둘러보기는 연결 없이 자유롭게';
+ $('account-summary').textContent=account?account.nickname+' · 보유 '+lb(account.balanceMilliLb)+' · 누적 '+lb(account.lifetimeMilliLb)+(Number.isSafeInteger(account.participationDays)?' · 미카게와 함께한 날 '+account.participationDays+'일':''):connecting?'기존 달가루 계정 확인 중…':'둘러보기는 연결 없이 자유롭게';
  $('connect-account').hidden=!!account;$('disconnect-account').hidden=!account;$('connect-account').disabled=busy;$('disconnect-account').disabled=busy;
  $('balance-row').hidden=!account;$('account-balance').textContent=account?lb(account.balanceMilliLb):'—';
  $('submit-tts').hidden=$('tts-panel').hidden;$('submit-video').hidden=$('video-panel').hidden;
