@@ -12,7 +12,7 @@ function render(){
  for(const b of shop.bundles.filter(b=>b.enabled||owned.has(b.id))){
   const card=node('details'),summary=node('summary',b.name+' · '+b.emoteIds.length+'종 · '+lb(b.priceMilliLb)+(owned.has(b.id)?' · 보유중':''));card.open=true;card.append(summary,node('p',b.description));
   const grid=node('div');grid.style.cssText='display:flex;flex-wrap:wrap;gap:12px';
-  for(const id of b.emoteIds){const e=shop.emotes.find(x=>x.id===id);if(!e)continue;const figure=node('figure');figure.style.cssText='margin:0;width:110px;text-align:center';const img=node('img');img.width=80;img.height=80;img.alt=e.name;img.dataset.src=origin+'/emote-assets/'+e.asset;img.onerror=()=>{img.removeAttribute('src');};const copy=node('button',e.trigger+' 복사');copy.type='button';copy.onclick=async()=>{try{await navigator.clipboard.writeText(e.trigger);status.textContent=e.trigger+' 복사했습니다. 치지직 채팅에 사용하세요.';}catch{status.replaceChildren(node('span','길게 누르거나 선택해 복사해 주세요. '));const field=node('input');field.value=e.trigger;field.readOnly=true;field.setAttribute('aria-label','복사할 이모지');status.append(field);field.focus();field.select();}};figure.append(img,node('figcaption',e.name+(e.enabled?'':' · 사용 중지')),node('small',account?(owned.has(b.id)?'보유':'미해금'):'연결하면 보유 여부 표시'),copy);grid.append(figure);}
+  for(const id of b.emoteIds){const e=shop.emotes.find(x=>x.id===id);if(!e)continue;const figure=node('figure');figure.style.cssText='margin:0;width:110px;text-align:center';const img=node('img');img.width=80;img.height=80;img.alt=e.name;img.dataset.src=origin+'/emote-assets/'+e.asset;img.onerror=()=>{img.removeAttribute('src');};const copy=node('button',e.trigger+' 복사');copy.type='button';copy.onclick=async()=>{try{await navigator.clipboard.writeText(e.trigger);status.textContent=e.trigger+' 복사했습니다. 치지직 채팅에 사용하세요.';}catch{status.replaceChildren(node('span','길게 누르거나 선택해 복사해 주세요. '));const field=node('input');field.value=e.trigger;field.readOnly=true;field.setAttribute('aria-label','복사할 이모지');status.append(field);field.focus();field.select();}};figure.append(img,node('figcaption',e.name+(e.enabled?'':' · 사용 중지')),node('small',account?(owned.has(b.id)?'보유':'미해금'):'연결하면 보유 여부 표시'),copy);appendRecognition(figure,e);grid.append(figure);}
   card.append(grid);const have=owned.has(b.id),short=account&&!account.isOwner&&shop.availableMilliLb<b.priceMilliLb;const buy=node('button',have?'보유중':short?'달가루 부족':account?'이 번들 해금 · '+lb(b.priceMilliLb):'계정 연결 후 해금');buy.type='button';buy.disabled=busy||have||!!short||!b.enabled;buy.onclick=()=>void purchase(b.id);card.append(buy);card.addEventListener('toggle',()=>animate(card));host.append(card);previews.observe(card);
  }
  refresh.disabled=busy;
@@ -30,3 +30,12 @@ async function purchase(id){if(busy)return;busy=true;render();try{
 }
 refresh.onclick=async()=>{if(busy)return;busy=true;refresh.disabled=true;try{await load();}catch(e){status.textContent=e.message;}finally{busy=false;if(shop)render();}};
 try{const r=await fetch('./emote-catalog.json');if(!r.ok)throw Error('상점 목록을 불러오지 못했습니다.');shop=await r.json();render();account=await connectedAccount();if(account)await load();}catch(e){status.textContent=e.message;}
+
+function appendRecognition(figure,e){
+ const r=e.recognition;if(!r)return;const aliases=r.aliases??[];
+ if(!aliases.length&&!r.skinTones)return;
+ const info=node('details'),title=node('summary','함께 인식하는 이모지');info.append(title);
+ if(aliases.length)info.append(node('p',aliases.join(' ')));
+ if(r.skinTones)info.append(node('p','모든 피부색 지원'));
+ figure.append(info);
+}

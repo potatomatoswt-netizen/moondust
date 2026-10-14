@@ -83,210 +83,405 @@
       "name": "좋아요",
       "trigger": "👍",
       "asset": "like-eed3e1c552b2e7c0.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
     },
     {
       "id": "okay",
       "name": "이건 괜찮아 4",
       "trigger": "👌",
       "asset": "okay-93b580d7448244f3.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "🆗"
+        ],
+        "fallbacks": [],
+        "skinTones": true
+      }
     },
     {
       "id": "hello",
       "name": "인사말 1",
       "trigger": "👋",
       "asset": "hello-a916f57920b6ce4c.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
     },
     {
       "id": "surprise",
       "name": "깜짝",
       "trigger": "😮",
       "asset": "surprise-17e62fa26960fc77.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "😲",
+          "😯"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "peek",
       "name": "빼꼼 2",
       "trigger": "👀",
       "asset": "peek-11a2d6be39b840a2.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "shake",
       "name": "흔들기 1",
       "trigger": "💃",
       "asset": "shake-0566fd6a4ebff6fd.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "🕺"
+        ],
+        "fallbacks": [],
+        "skinTones": true
+      }
     },
     {
       "id": "heart",
       "name": "하트 2",
       "trigger": "❤️",
       "asset": "heart-c5cb32f685c81245.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "💖",
+          "💗",
+          "💓",
+          "💝"
+        ],
+        "fallbacks": [
+          "hearts"
+        ],
+        "skinTones": false
+      }
     },
     {
       "id": "hearts",
       "name": "하트 3",
       "trigger": "💕",
       "asset": "hearts-6befe5bba53d9139.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "💞"
+        ],
+        "fallbacks": [
+          "heart"
+        ],
+        "skinTones": false
+      }
     },
     {
       "id": "letter",
       "name": "러브레터",
       "trigger": "💌",
       "asset": "letter-54b73bb79f86b733.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "lick",
       "name": "핥기",
       "trigger": "😋",
       "asset": "lick-c629da28eef0bb8f.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "boop",
       "name": "부프",
       "trigger": "👉",
       "asset": "boop-9b54d014d9bc1bb2.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
     },
     {
       "id": "hypnosis",
       "name": "최면",
       "trigger": "😵",
       "asset": "hypnosis-98c4894995e524b1.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "angry",
       "name": "화남",
       "trigger": "💢",
       "asset": "angry-86b6f8505c39446e.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "😠",
+          "😡",
+          "🤬"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "typing",
       "name": "타이핑(화남)",
       "trigger": "⌨️",
       "asset": "typing-b37c34c18e0b1b00.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "knife",
       "name": "칼 2",
       "trigger": "🔪",
       "asset": "knife-c58257f8c8761fe9.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "crowbar",
       "name": "쇠지렛대 1",
       "trigger": "🔧",
       "asset": "crowbar-62a0d95db8de074e.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "cheese",
       "name": "치즈슬랩",
       "trigger": "🧀",
       "asset": "cheese-3510c371e2b51f42.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "scissors",
       "name": "컷(가위)",
       "trigger": "✂️",
       "asset": "scissors-648e9de0bd212ffe.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "lightstick1",
       "name": "응원봉 1",
       "trigger": "🪄",
       "asset": "lightstick1-c11123ab72e8c10c.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [
+          "lightstick2"
+        ],
+        "skinTones": false
+      }
     },
     {
       "id": "lightstick2",
       "name": "응원봉 2",
       "trigger": "✨",
       "asset": "lightstick2-cdcb2ab9e2550002.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [
+          "lightstick1"
+        ],
+        "skinTones": false
+      }
     },
     {
       "id": "party",
       "name": "축하",
       "trigger": "🎉",
       "asset": "party-117d31d4551e57bc.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "🎊",
+          "🥳"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "megaphone",
       "name": "메가폰",
       "trigger": "📣",
       "asset": "megaphone-efcb4255422467fb.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "📢"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "bell",
       "name": "종 울리기",
       "trigger": "🔔",
       "asset": "bell-528068bf02d869b9.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "🛎️"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "blep",
       "name": "벨렙 3",
       "trigger": "😛",
       "asset": "blep-5c6ae68a7be7bb1d.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "😜",
+          "😝"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "sleep",
       "name": "수면(일반)",
       "trigger": "😴",
       "asset": "sleep-dbfe5532da8b2ffd.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "💤"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "bedtime",
       "name": "수면(준비 1단계)",
       "trigger": "🥱",
       "asset": "bedtime-1fb79cf5437d87c2.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "cry",
       "name": "울음 2",
       "trigger": "😭",
       "asset": "cry-e6a0855f14cc6138.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "😢",
+          "😿"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "cool",
       "name": "선글라스 픽셀 글림",
       "trigger": "😎",
       "asset": "cool-c423064ec222534f.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "🕶️"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "phone",
       "name": "증거 포착(핸드폰)",
       "trigger": "📸",
       "asset": "phone-e9a98c3426c500c6.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [
+          "📷"
+        ],
+        "fallbacks": [],
+        "skinTones": false
+      }
     },
     {
       "id": "card",
       "name": "카드 스와이프",
       "trigger": "💳",
       "asset": "card-10024dec38ced4e2.gif",
-      "enabled": true
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
     }
   ]
 }
