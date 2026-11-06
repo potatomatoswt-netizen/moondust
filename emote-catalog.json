@@ -14,7 +14,8 @@
         "surprise",
         "peek",
         "shake"
-      ]
+      ],
+      "listPriceMilliLb": 600
     },
     {
       "id": "love",
@@ -29,7 +30,8 @@
         "lick",
         "boop",
         "hypnosis"
-      ]
+      ],
+      "listPriceMilliLb": 600
     },
     {
       "id": "chaos",
@@ -44,7 +46,8 @@
         "crowbar",
         "cheese",
         "scissors"
-      ]
+      ],
+      "listPriceMilliLb": 600
     },
     {
       "id": "cheer",
@@ -59,7 +62,8 @@
         "megaphone",
         "bell",
         "blep"
-      ]
+      ],
+      "listPriceMilliLb": 600
     },
     {
       "id": "scene",
@@ -74,7 +78,40 @@
         "cool",
         "phone",
         "card"
-      ]
+      ],
+      "listPriceMilliLb": 600
+    },
+    {
+      "id": "neowi-1",
+      "name": "너울이 1팩",
+      "description": "너울이 표정 6종 · 영구 해금",
+      "priceMilliLb": 600,
+      "enabled": true,
+      "emoteIds": [
+        "neowi-sleep",
+        "neowi-cry",
+        "neowi-cheer",
+        "neowi-interest",
+        "neowi-question",
+        "neowi-peek"
+      ],
+      "listPriceMilliLb": 600
+    },
+    {
+      "id": "neowi-2",
+      "name": "너울이 2팩",
+      "description": "너울이 표정 6종 · 영구 해금",
+      "priceMilliLb": 600,
+      "enabled": true,
+      "emoteIds": [
+        "neowi-kiss",
+        "neowi-heh",
+        "neowi-dead",
+        "neowi-hello",
+        "neowi-heart",
+        "neowi-gasp"
+      ],
+      "listPriceMilliLb": 600
     }
   ],
   "emotes": [
@@ -476,6 +513,150 @@
       "name": "카드 스와이프",
       "trigger": "💳",
       "asset": "card-10024dec38ced4e2.gif",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-sleep",
+      "name": "너울이 졸려",
+      "trigger": "😪",
+      "asset": "neowi-sleep-90ada2137429f231.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-cry",
+      "name": "너울이 엉엉",
+      "trigger": "🥲",
+      "asset": "neowi-cry-25bdd8effabacdc1.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-cheer",
+      "name": "너울이 응원",
+      "trigger": "🙌",
+      "asset": "neowi-cheer-fa7fb49f21f439de.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
+    },
+    {
+      "id": "neowi-interest",
+      "name": "너울이 흥미",
+      "trigger": "🍿",
+      "asset": "neowi-interest-624e5a18eaf896e1.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-question",
+      "name": "너울이 물음",
+      "trigger": "❓",
+      "asset": "neowi-question-6c96b8eb396dd05f.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-peek",
+      "name": "너울이 눈치",
+      "trigger": "🫣",
+      "asset": "neowi-peek-80f66ad392a7d7e5.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-kiss",
+      "name": "너울이 뽀뽀",
+      "trigger": "😘",
+      "asset": "neowi-kiss-8b04624f65d8d72b.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-heh",
+      "name": "너울이 헷",
+      "trigger": "😏",
+      "asset": "neowi-heh-14ce83ee393764d1.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-dead",
+      "name": "너울이 너무기뻐서죽음",
+      "trigger": "💀",
+      "asset": "neowi-dead-d442fd1340cd12ef.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-hello",
+      "name": "너울이 안녕",
+      "trigger": "🙋",
+      "asset": "neowi-hello-4611755e190566be.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
+    },
+    {
+      "id": "neowi-heart",
+      "name": "너울이 하트",
+      "trigger": "🩷",
+      "asset": "neowi-heart-86cf8c88e7d1d2e7.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-gasp",
+      "name": "너울이 헉",
+      "trigger": "😨",
+      "asset": "neowi-gasp-427283c5ea30bba0.png",
       "enabled": true,
       "recognition": {
         "aliases": [],
