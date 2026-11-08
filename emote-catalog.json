@@ -107,32 +107,14 @@
       ]
     },
     {
-      "id": "neowi-wwe-single",
-      "name": "너울이 WWE",
-      "description": "개별 이모티콘 1종 · 영구 해금",
-      "priceMilliLb": 100,
+      "id": "neowi-3",
+      "name": "너울이 3팩",
+      "description": "WWE · UFC · 흠… 3종 · 영구 해금",
+      "priceMilliLb": 300,
       "enabled": true,
       "emoteIds": [
-        "neowi-wwe"
-      ]
-    },
-    {
-      "id": "neowi-ufc-single",
-      "name": "너울이 UFC",
-      "description": "개별 이모티콘 1종 · 영구 해금",
-      "priceMilliLb": 100,
-      "enabled": true,
-      "emoteIds": [
-        "neowi-ufc"
-      ]
-    },
-    {
-      "id": "neowi-hmm-single",
-      "name": "너울이 흠…",
-      "description": "개별 이모티콘 1종 · 영구 해금",
-      "priceMilliLb": 100,
-      "enabled": true,
-      "emoteIds": [
+        "neowi-wwe",
+        "neowi-ufc",
         "neowi-hmm"
       ]
     }
