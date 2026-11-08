@@ -1,0 +1,1 @@
+document.addEventListener('click',async event=>{const b=event.target.closest('button[data-copy]');if(!b)return;const status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(b.dataset.copy);status.textContent=b.dataset.copy+' 복사했습니다. 치지직 일반 채팅에 입력하세요.';}catch{status.textContent='이모지를 선택해 복사해 주세요: '+b.dataset.copy;}});
