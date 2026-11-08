@@ -14,8 +14,7 @@
         "surprise",
         "peek",
         "shake"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "love",
@@ -30,8 +29,7 @@
         "lick",
         "boop",
         "hypnosis"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "chaos",
@@ -46,8 +44,7 @@
         "crowbar",
         "cheese",
         "scissors"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "cheer",
@@ -62,8 +59,7 @@
         "megaphone",
         "bell",
         "blep"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "scene",
@@ -78,8 +74,7 @@
         "cool",
         "phone",
         "card"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "neowi-1",
@@ -94,8 +89,7 @@
         "neowi-interest",
         "neowi-question",
         "neowi-peek"
-      ],
-      "listPriceMilliLb": 600
+      ]
     },
     {
       "id": "neowi-2",
@@ -110,8 +104,37 @@
         "neowi-hello",
         "neowi-heart",
         "neowi-gasp"
-      ],
-      "listPriceMilliLb": 600
+      ]
+    },
+    {
+      "id": "neowi-wwe-single",
+      "name": "너울이 WWE",
+      "description": "개별 이모티콘 1종 · 영구 해금",
+      "priceMilliLb": 100,
+      "enabled": true,
+      "emoteIds": [
+        "neowi-wwe"
+      ]
+    },
+    {
+      "id": "neowi-ufc-single",
+      "name": "너울이 UFC",
+      "description": "개별 이모티콘 1종 · 영구 해금",
+      "priceMilliLb": 100,
+      "enabled": true,
+      "emoteIds": [
+        "neowi-ufc"
+      ]
+    },
+    {
+      "id": "neowi-hmm-single",
+      "name": "너울이 흠…",
+      "description": "개별 이모티콘 1종 · 영구 해금",
+      "priceMilliLb": 100,
+      "enabled": true,
+      "emoteIds": [
+        "neowi-hmm"
+      ]
     }
   ],
   "emotes": [
@@ -657,6 +680,42 @@
       "name": "너울이 헉",
       "trigger": "😨",
       "asset": "neowi-gasp-427283c5ea30bba0.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-wwe",
+      "name": "너울이 WWE",
+      "trigger": "🤼",
+      "asset": "neowi-wwe-4e50de957a567e4e.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": true
+      }
+    },
+    {
+      "id": "neowi-ufc",
+      "name": "너울이 UFC",
+      "trigger": "🥊",
+      "asset": "neowi-ufc-42dbe355ad2f5d29.png",
+      "enabled": true,
+      "recognition": {
+        "aliases": [],
+        "fallbacks": [],
+        "skinTones": false
+      }
+    },
+    {
+      "id": "neowi-hmm",
+      "name": "너울이 흠…",
+      "trigger": "🤔",
+      "asset": "neowi-hmm-a0caed163dd9e3e2.png",
       "enabled": true,
       "recognition": {
         "aliases": [],
